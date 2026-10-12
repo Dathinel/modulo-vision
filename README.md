@@ -23,6 +23,8 @@
 
 Corre en: DirectML (GPU) o CPU. Motor: ONNX Runtime con DirectML 1.24.4 (MIT) y DirectML 1.15.4 (licencia de Microsoft). Rodaje lo abre como un proceso aparte y le habla por una tubería con nombre ([protocolo de módulos](https://github.com/Dathinel/rodaje/blob/main/docs/protocolo-modulos.md)); lo que devuelve es una propuesta que se aplica como un paso del historial (Ctrl+Z la deshace).
 
+Desde 1.1, Rodaje le pasa con su perfil de IA el lado de trabajo de MODNet (`lado`), los hilos de la CPU (`hilos`) y cuántos cuadros infiere a la vez en la CPU (`paralelo`), y manda la calidad alta a la CPU si BiRefNet_lite no cabe en la GPU.
+
 ## Modelos (211 MB)
 
 El `.paquete` no trae los modelos: Rodaje los baja después de instalar el módulo, comprueba su SHA-256 y los deja en `modelos\` dentro de la carpeta del módulo. Si la descarga se corta, sigue desde donde quedó.
@@ -36,7 +38,7 @@ El `.paquete` no trae los modelos: Rodaje los baja después de instalar el módu
 
 ## Instalar en Rodaje
 
-En Rodaje, Complementos → Instalar lo baja, comprueba la firma del catálogo y el hash, lo instala y baja sus modelos. A mano: descarga `modulo-vision-1.0.0.paquete` de las [releases](https://github.com/Dathinel/modulo-vision/releases) y usa «Instalar desde archivo…» en Complementos; después, «Bajar modelos».
+En Rodaje, Complementos → Instalar lo baja, comprueba la firma del catálogo y el hash, lo instala y baja sus modelos. A mano: descarga `modulo-vision-1.1.0.paquete` de las [releases](https://github.com/Dathinel/modulo-vision/releases) y usa «Instalar desde archivo…» en Complementos; después, «Bajar modelos».
 
 ## Código
 
