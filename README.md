@@ -43,7 +43,7 @@ En Rodaje, Complementos → Instalar lo baja, comprueba la firma del catálogo y
 
 ## Código
 
-El código fuente está en el repositorio de Rodaje, en [`modules/Rodaje.Module.Vision`](https://github.com/Dathinel/rodaje/tree/main/modules/Rodaje.Module.Vision), junto con la biblioteca del protocolo ([`src/Rodaje.Modules.Protocol`](https://github.com/Dathinel/rodaje/tree/main/src/Rodaje.Modules.Protocol)). Cada release adjunta además el código exacto con el que se compiló (`codigo-fuente-*.zip`). Se arma con:
+El código fuente está en el repositorio de Rodaje, en [`modules/Rodaje.Module.Vision`](https://github.com/Dathinel/rodaje/tree/main/modules/Rodaje.Module.Vision), junto con la biblioteca del protocolo ([`src/Rodaje.Modules.Protocol`](https://github.com/Dathinel/sala/tree/main/src/Rodaje.Modules.Protocol)). Cada release adjunta además el código exacto con el que se compiló (`codigo-fuente-*.zip`). Se arma con:
 
 ```
 powershell -NoProfile -ExecutionPolicy Bypass -File build\empaquetar-modulo.ps1 -Modulo modulo-vision
